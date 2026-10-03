@@ -173,7 +173,6 @@ client.on('message_create', message => {
             }
         });
     }
-    
 });
 
 client.initialize();
