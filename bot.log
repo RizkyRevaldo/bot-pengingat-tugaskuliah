@@ -1,0 +1,18 @@
+Sukses terhubung ke database SQLite.
+/home/rizky/bot-pengingat-tugas/node_modules/puppeteer-core/lib/cjs/puppeteer/common/CallbackRegistry.js:103
+    #error = new Errors_js_1.ProtocolError();
+             ^
+
+ProtocolError: Page.navigate timed out. Increase the 'protocolTimeout' setting in launch/connect calls for a higher timeout if needed.
+    at <instance_members_initializer> (/home/rizky/bot-pengingat-tugas/node_modules/puppeteer-core/lib/cjs/puppeteer/common/CallbackRegistry.js:103:14)
+    at new Callback (/home/rizky/bot-pengingat-tugas/node_modules/puppeteer-core/lib/cjs/puppeteer/common/CallbackRegistry.js:107:16)
+    at CallbackRegistry.create (/home/rizky/bot-pengingat-tugas/node_modules/puppeteer-core/lib/cjs/puppeteer/common/CallbackRegistry.js:25:26)
+    at Connection._rawSend (/home/rizky/bot-pengingat-tugas/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Connection.js:108:26)
+    at CdpCDPSession.send (/home/rizky/bot-pengingat-tugas/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/CdpSession.js:74:33)
+    at navigate (/home/rizky/bot-pengingat-tugas/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Frame.js:173:51)
+    at CdpFrame.goto (/home/rizky/bot-pengingat-tugas/node_modules/puppeteer-core/lib/cjs/puppeteer/cdp/Frame.js:151:17)
+    at CdpFrame.<anonymous> (/home/rizky/bot-pengingat-tugas/node_modules/puppeteer-core/lib/cjs/puppeteer/util/decorators.js:109:27)
+    at CdpPage.goto (/home/rizky/bot-pengingat-tugas/node_modules/puppeteer-core/lib/cjs/puppeteer/api/Page.js:580:43)
+    at Client.initialize (/home/rizky/bot-pengingat-tugas/node_modules/whatsapp-web.js/src/Client.js:487:20)
+
+Node.js v20.20.2

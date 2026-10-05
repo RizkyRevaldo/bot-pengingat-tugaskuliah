@@ -23,7 +23,20 @@ const db = new sqlite3.Database('./tugas_kuliah.db', (err) => {
 // Menggunakan LocalAuth agar sesi tersimpan.
 // Kamu hanya perlu scan QR satu kali.
 const client = new Client({
-    authStrategy: new LocalAuth()
+    authStrategy: new LocalAuth(),
+    puppeteer: {
+        headless: true,
+        protocolTimeout: 120000, // Tambah timeout jadi 2 menit (120000 ms)
+        args: [
+            '--no-sandbox',
+            '--disable-setuid-sandbox',
+            '--disable-dev-shm-usage',
+            '--disable-accelerated-2d-canvas',
+            '--no-first-run',
+            '--no-zygote',
+            '--disable-gpu'
+        ]
+    }
 });
 
 // Menampilkan QR code di terminal saat pertama kali dijalankan
